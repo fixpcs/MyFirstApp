@@ -21,18 +21,18 @@ $(document).ready(function(){
         if (session.media.length != 0) {
             console.log('Found' + session.media.length + 'sessions.');
         }
-    }
+    };
     function receiverListener(e) {
         if (e === 'available') {
             console.log("Chromecast was found on the network.");
         } else{
             console.log("There are no Chromecasts available.");
         }
-    }
+    };
     function onInitSuccess(){
         console.log("Initialization succeeded.");
-    }
+    };
     function onInitError(){
         console.log("Initialization failed.");
-    }
+    };
 })
