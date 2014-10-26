@@ -33,6 +33,6 @@ $(document).ready(function(){
         console.log("Initialization succeeded.");
     }
     function onInitError(){
-        console.log("Initialization failed.")
+        console.log("Initialization failed.");
     }
 })
