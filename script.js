@@ -75,7 +75,7 @@ $('#stop').click(function(){
         session.stop(onStopAppSuccess,onStopAppError)
     };
     function onStopAppSuccess(){
-        consloe.log("Successfully stopped app.");
+        console.log("Successfully stopped app.");
     };
     function onStopAppError(){
         console.log("Error stopping app.")
