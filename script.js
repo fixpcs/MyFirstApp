@@ -12,14 +12,14 @@ $(document).ready(function(){
     function initializeCastApi() {
         var applicationID=new chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID;
         var sessionRequest=new chrome.cast.SessionRequest(applicationID);
-        var ApiConfig=new chrome.cast.ApiConfig(sessionRequest,sessionListener, receiverListener);
+        var ApiConfig=new chrome.cast.ApiConfig(sessionRequest,sessionListener,receiverListener);
         chrome.cast.initialize(ApiConfig,onInitSuccess,onInitError);
     };
     function sessionListener(e) {
         session=e;
         console.log('New session');
         if (session.media.length != 0) {
-            console.log('Found' + session.media.length + 'sessions.');
+            console.log('Found ' + session.media.length + ' sessions.');
         }
     };
     function receiverListener(e) {
