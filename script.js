@@ -13,7 +13,7 @@ $(document).ready(function(){
         var applicationID=new chrome.cast.media.DEFAULT_MEDIA_RECEIVER_APP_ID;
         var sessionRequest=new chrome.cast.SessionRequest(applicationID);
         var ApiConfig=new chrome.cast.ApiConfig(sessionRequest,sessionListener, receiverListener);
-        chrome.cast.initialize(apiConfig,onInitSuccess,onInitError);
+        chrome.cast.initialize(ApiConfig,onInitSuccess,onInitError);
     };
     function sessionListener(e) {
         session=e;
